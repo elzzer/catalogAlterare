@@ -15,7 +15,7 @@ const App = () => {
             <Route path = "/home" element = { Home() } />
           </Routes>
         </BrowserRouter> */}
-        HELLO WORLD
+        <h1>FELITA GUTANA GENDUTT DAN HITAM :)</h1>
       <Footer/>
     </React.Fragment>
   );
