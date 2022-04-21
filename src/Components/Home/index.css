@@ -1,0 +1,14 @@
+  #customer-testimonoals {
+    margin-top: 6%;
+  }
+  .customer-testimonoals {
+    margin: 0;
+    opacity: 1;
+  }
+  .customer-testimonoals .item img{
+    width: 90%;
+    margin-bottom: 15%;
+  }
+  .customer-testimonoals .active.center .item {
+    opacity: 1;
+  }
