@@ -8,16 +8,14 @@ import Footer from "./Components/Footer";
 
 const App = () => {
   return (
-    <React.Fragment> 
-      <Header/>
+    <div>
         {/* <BrowserRouter>
           <Routes>
             <Route path = "/home" element = { Home() } />
           </Routes>
         </BrowserRouter> */}
         <h1>FELITA GUTANA GENDUTT DAN HITAM :)</h1>
-      <Footer/>
-    </React.Fragment>
+    </div>
   );
 }
 
