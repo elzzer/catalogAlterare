@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Mainmenu from "./Components/Mainmenu";
 import Home from "./Components/Home";
 
@@ -46,10 +46,10 @@ import Home from "./Components/Home";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/catalogAlterare">
       <Routes>
-        <Route path = "/catalogAlterare" element = { Mainmenu() } />
-        <Route path = "/catalogAlterare/home" element = { Home() } />
+        <Route exact path = "/" element = { Mainmenu() } />
+        <Route exact path = "/home" element = { Home() } />
       </Routes>
     </Router>
   );
