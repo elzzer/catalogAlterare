@@ -1,13 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";   
+import logo from '../../images/logoAlterare.png';
 
 import PopupProduct from '../PopupProduct';
 const Home = () => {
+    const [asd, setAsd] = useState();
     const [show, setShow] = useState(false);
+    const [listImage, setListImage] = useState([]);
     const responsive = 
         {
             desktop: {
@@ -56,9 +59,46 @@ const Home = () => {
         alert(e.page.index);
     }
 
+    function importAll(r) {
+        let images = {};
+        let tempListImage = [];
+        r.keys().map((item, index) => { 
+            images[item.replace('./', '')] = r(item);
+            tempListImage.push(item.replace('./', ''));
+        });
+        setListImage(tempListImage);
+        return images;
+    }
+    
+    useEffect(() => {
+        setAsd(importAll(require.context('../../images/Sprei/Taiwan L235', false, /\.(png|jpe?g|svg)$/)));
+    }, []);
+
+    function renderListImage(image, index){
+        if((index+1) % 3 == 1)
+            return (
+                <>
+                    <div style={{width:"5vw", float:"left"}}>&nbsp;</div>
+                    <img src={asd[image]} style={{float:"left", width:"28vw", height:"10vh", borderRadius:"10%", margin:"1%"}}/>
+                </>
+            );
+        else if((index+1) % 3 == 2)
+            return <img src={asd[image]} style={{float:"left", width:"28vw", height:"10vh", borderRadius:"10%", margin:"1%"}}/>;
+        else {
+            return (
+                <>
+                    <img src={asd[image]} style={{float:"left", width:"28vw", height:"10vh", borderRadius:"10%", margin:"1%"}}/>
+                    <div style={{width:"5vw", float:"left"}}>&nbsp;</div>
+                    <br style={{clear:"both"}} />
+                </>
+                
+            );
+        }
+    }
 
     return(
-        <div>
+        <div style={{backgroundColor:"rgb(242,242,242)"}}>
+            <center><img src={logo} style={{width:"40vw", margin:"7% 0 7% 0"}}/></center>
             {
                 // images.map((image, id) => {
                 //     return (
@@ -89,13 +129,22 @@ const Home = () => {
                 {images.map((image, id) => {
                     return (
                         <div key={id} className="item">
-                            <center><img src={image}/></center>
+                            <img src={image}/>
                         </div>
                     )
                 })}
             </Carousel>
-            asdasd
-            {show ? <PopupProduct show={show} setShow={setShow} /> : ""}
+            <div style={{height:"4vh"}}>&nbsp;</div>
+            {
+                listImage.map((image, id) => {
+                    return (
+                        <div key={id} style={{width:"100%"}}>
+                            {renderListImage(image, id)}
+                        </div>
+                    )
+                })
+            }
+            {/* {show ? <PopupProduct show={show} setShow={setShow} /> : ""} */}
         </div>
     );
 }
