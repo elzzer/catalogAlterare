@@ -1,18 +1,28 @@
 {
   "files": {
     "main.css": "/catalogAlterare/static/css/main.399ac9b3.css",
-    "main.js": "/catalogAlterare/static/js/main.b317ed59.js",
+    "main.js": "/catalogAlterare/static/js/main.b547e27c.js",
+    "static/media/20180507_112427.jpg": "/catalogAlterare/static/media/20180507_112427.c6301239732e7fafc0fb.jpg",
+    "static/media/IMG20210611115953.jpg": "/catalogAlterare/static/media/IMG20210611115953.38fa68a07cb8ad845bf1.jpg",
+    "static/media/IMG20210611115713.jpg": "/catalogAlterare/static/media/IMG20210611115713.1c29a3690acb6b45a6ea.jpg",
     "static/media/backgroundHome.png": "/catalogAlterare/static/media/backgroundHome.d1aab0b2519d0eb518c4.png",
+    "static/media/IMG-20170831-WA0009.jpeg": "/catalogAlterare/static/media/IMG-20170831-WA0009.6c6eadad61f5a47333c7.jpeg",
+    "static/media/Screenshot_2021-06-04-10-52-23-58.jpg": "/catalogAlterare/static/media/Screenshot_2021-06-04-10-52-23-58.d5a2a7ac08213dda9af9.jpg",
+    "static/media/Screenshot_2021-06-04-10-52-39-15.jpg": "/catalogAlterare/static/media/Screenshot_2021-06-04-10-52-39-15.c3317f922975f6381c7f.jpg",
+    "static/media/IMG_20170609_082256.jpg": "/catalogAlterare/static/media/IMG_20170609_082256.b078aea06082e8604542.jpg",
+    "static/media/IMG-20170420-WA0137.jpg": "/catalogAlterare/static/media/IMG-20170420-WA0137.e64dbe419e5d1e7d57d9.jpg",
+    "static/media/IMG-20170420-WA0145.jpg": "/catalogAlterare/static/media/IMG-20170420-WA0145.a5f5cb64c79c1c626c1b.jpg",
+    "static/media/FB_IMG_1493003578766.jpg": "/catalogAlterare/static/media/FB_IMG_1493003578766.66408f5ef8f6a6b1eed2.jpg",
     "static/media/revicons.eot": "/catalogAlterare/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/catalogAlterare/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/logoHome.png": "/catalogAlterare/static/media/logoHome.d9497d6339baf2e2b08d.png",
     "static/media/revicons.woff": "/catalogAlterare/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/catalogAlterare/index.html",
     "main.399ac9b3.css.map": "/catalogAlterare/static/css/main.399ac9b3.css.map",
-    "main.b317ed59.js.map": "/catalogAlterare/static/js/main.b317ed59.js.map"
+    "main.b547e27c.js.map": "/catalogAlterare/static/js/main.b547e27c.js.map"
   },
   "entrypoints": [
     "static/css/main.399ac9b3.css",
-    "static/js/main.b317ed59.js"
+    "static/js/main.b547e27c.js"
   ]
 }
