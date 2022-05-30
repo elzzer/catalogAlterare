@@ -1,14 +1,31 @@
-  #customer-testimonoals {
-    margin-top: 6%;
-  }
-  .customer-testimonoals {
-    margin: 0;
-    opacity: 1;
-  }
-  .customer-testimonoals .item img{
-    width: 90%;
-    margin-bottom: 15%;
-  }
-  .customer-testimonoals .active.center .item {
-    opacity: 1;
-  }
+#customer-testimonoals {
+  margin-top: 6%;
+}
+.customer-testimonoals {
+  margin: 0;
+  opacity: 1;
+}
+.customer-testimonoals .item img{
+  width: 90%;
+  margin-bottom: 15%;
+}
+.customer-testimonoals .active.center .item {
+  opacity: 1;
+}
+
+
+/* OPACITY BACKGROUND MODAL POPUP */
+.modal-backdrop
+{
+  opacity:0.5 !important;
+}
+.modal-content {
+  border: none;
+}
+body.modal-open > :not(.modal) {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}

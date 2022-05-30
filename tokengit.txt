@@ -1,5 +1,5 @@
 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
 
-git remote set-url origin https://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@github.com/elzzer/catalogAlterare.git
+git remote set-url origin https://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@github.com/elzzer/catalogAlterare.git
 
 git remote set-url origin https://github.com/elzzer/catalogAlterare.git
